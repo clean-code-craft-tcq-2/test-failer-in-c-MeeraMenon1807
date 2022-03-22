@@ -5,7 +5,6 @@
 const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
 const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 
-
 struct Colorpair
 {
 	int Number;
@@ -32,8 +31,7 @@ int printColorMap() {
 			strcpy(colorpair[ColorPairArrayIndex].MajorColor , majorColor[i]);
 			strcpy(colorpair[ColorPairArrayIndex].MinorColor , minorColor[j]);
 			printOnConsole(ColorPairArrayIndex,colorpair[ColorPairArrayIndex].MajorColor,colorpair[ColorPairArrayIndex].MinorColor);	
-		        ColorPairArrayIndex++;
-				          
+		        ColorPairArrayIndex++;				          
         }
     }
     return i * j;
